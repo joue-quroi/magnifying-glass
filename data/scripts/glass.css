@@ -1,0 +1,15 @@
+.mgnfng-glss {
+  all: initial;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-position: top right;
+  z-index: 1000;
+  border-radius: 50%;
+  cursor: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #ccc, 0 0 0 4px #fff;
+  filter: drop-shadow(0 0 5px #ccc);
+}
+.mgnfng-glss.hidden {
+  display: none;
+}

@@ -21,7 +21,7 @@
   if (released === false) {
     chrome.storage.local.get({
       magnification: 2,
-      size: 400
+      size: 200
     }, prefs => {
       const div = document.createElement('div');
       div.classList.add('mgnfng-glss');

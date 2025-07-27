@@ -56,7 +56,7 @@ chrome.runtime.onMessage.addListener((request, sender, response) => {
 
 chrome.runtime.onInstalled.addListener(() => chrome.storage.local.get({
   magnification: 2,
-  size: 400
+  size: 200
 }, prefs => {
   chrome.contextMenus.create({
     id: 'magnification',

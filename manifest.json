@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "Magnifying Glass",
   "description": "Convert your mouse cursor to a high-quality magnifying glass",
   "permissions": [

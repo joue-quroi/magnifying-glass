@@ -9,7 +9,13 @@
   cursor: none;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #ccc, 0 0 0 4px #fff;
   filter: drop-shadow(0 0 5px #ccc);
+
+  .hidden {
+    display: none;
+  }
 }
-.mgnfng-glss.hidden {
-  display: none;
+.mgnfng-block {
+  z-index: calc(Infinity);
+  position: fixed;
+  inset: 0;
 }

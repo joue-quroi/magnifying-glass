@@ -13,7 +13,13 @@
       cmd: 'release'
     });
   };
+  const cleanup = () => {
+    for (const div of document.querySelectorAll('.mgnfng-block')) {
+      div.remove();
+    }
+  };
 
+  cleanup();
   for (const div of document.querySelectorAll('.mgnfng-glss')) {
     release(div);
     released = true;
@@ -23,6 +29,10 @@
       magnification: 2,
       size: 200
     }, prefs => {
+      const block = document.createElement('div');
+      block.classList.add('mgnfng-block');
+      document.documentElement.append(block);
+
       const div = document.createElement('div');
       div.classList.add('mgnfng-glss');
       document.documentElement.append(div);
@@ -61,6 +71,7 @@
         });
       };
       div.release = () => {
+        cleanup();
         release(div);
       };
       div.keydown = e => {
